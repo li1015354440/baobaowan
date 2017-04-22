@@ -1,0 +1,7 @@
+.orders-list > li:last-child > div:last-child {
+  border: 1px solid #737373;
+  margin-right: 0;
+}
+.orders-list > li:last-child > div:last-child > a {
+  color: #737373;
+}

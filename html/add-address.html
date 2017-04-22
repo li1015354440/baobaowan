@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="format-detection" content="telephone=no" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+			<title>baobaowan</title>
+			<link rel="stylesheet" type="text/css" href="../css/myreset.css" />
+			<link rel="stylesheet" type="text/css" href="../css/add-address.css"/>
+	</head>
+
+	<body>
+		<!--收货地址-->
+		<ul class="delivery-address">
+			<li>
+				<span>收货人</span>
+				<input type="" placeholder="收货人" id="delivery-man" />
+			</li>
+			<li>
+				<span>手机号</span>
+				<input type="text" placeholder="收货人手机号码" id="delivery-phone" />
+			</li>
+			<li id="change-address">
+				<span>选择省市</span>
+				<input type="text" placeholder="请选择" id="city"/>
+			</li>
+			<li>
+				<textarea id="detail-address">请填写详细地址，例如街道等</textarea>
+			</li>
+		</ul>
+		
+		<div class="save"><a href="administered-address.html">保存</a></div>
+		
+		<!--弹框-->
+		<div class="alert-bg" id="alert-bg">
+			<div class="alert-address" id="alert-address">
+				<p>请选择省</p>
+				<ul id="cities">
+					<li class="li-active"><a href="javascript:;">北京市</a></li>
+					<li>天津市</li>
+					<li>河北省</li>
+					<li>山西省</li>
+					<li>陕西省</li>
+					<li>黑龙江省</li>
+					<li>四川省</li>
+					<li>浙江省</li>
+					<li>安徽省</li>
+					<li>广东省</li>
+					<li>河南省</li>
+					<li>青海省</li>
+					<li>山东省</li>
+					<li>内蒙古</li>
+					<li>宁夏</li>
+					<li>新疆</li>
+				</ul>
+			</div>
+		</div>
+
+		<!--js-->
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/tools.js"></script>
+		<script src="../js/add-address.js"></script>
+	</body>
+
+</html>
