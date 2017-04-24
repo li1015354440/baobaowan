@@ -57,16 +57,16 @@ body {
 }
 .new-address {
   display: block;
-  color: #DCB469;
+  color: #fff;
   box-sizing: border-box;
   position: fixed;
   bottom: .4rem;
   left: .225rem;
   width: 88%;
   height: .49rem;
-  border: 1px solid #DCB469;
+  border: 1px solid #2b2b2b;
   font-size: .18rem;
   line-height: .49rem;
-  border-radius: .045rem;
-  background: #fff;
+  border-radius: .245rem;
+  background: #2b2b2b;
 }
