@@ -50,6 +50,22 @@ input, select {
     border: none;
     outline: none;
 }
+img {
+	display: block;
+}
+@font-face {
+	font-family: "PingFang";
+	src: url('../font/冬青黑体W3.otf');
+}
+html {
+	font-family: "PingFang";
+}
+smallest {
+	font-size: .14rem;
+}
+small {
+	font-size: .12rem;
+}
 :focus {
     outline: 1;
 }
@@ -95,6 +111,8 @@ input, select {
 }
 .main .commodity > li > a {
   display: block;
+  border-radius: .06rem;
+  overflow: hidden;
 }
 .main .commodity > li > a > img {
   width: 100%;
@@ -103,7 +121,7 @@ input, select {
   text-align: left;
 }
 .main .commodity > li > p:nth-child(2) {
-  color: 999;
+  color: #999;
   font-size: .12rem;
   margin-top: .12rem;
 }
@@ -124,8 +142,7 @@ input, select {
   height: .49rem;
   background: #fff;
   box-shadow: 0 -1px 10px 0 #ddd;
-  font-size: .11rem;
-  color: #262626;
+  font-size: .1rem;
 }
 .menu > li {
   float: left;
@@ -147,10 +164,10 @@ input, select {
 .menu > li > a > span {
 	display: block;
 	margin: 0 auto;
-	margin-top: .06rem;
+	margin-top: .07rem;
 }
 .menu > li > a {
-	color: #262626;
+	color: #333;
 }
 /*全部订单*/
 .header {
@@ -207,6 +224,7 @@ input, select {
   width: .73rem;
   height: .73rem;
   margin-top: .11rem;
+  border-radius: .04rem;
 }
 .orders-list > li:not(:last-child) > div {
   width: 68.8%;
@@ -215,10 +233,11 @@ input, select {
 .orders-list > li:not(:last-child) > div > p:first-child {
   margin-top: .16rem;
   text-align: left;
+  line-height: .15rem;
 }
 .orders-list > li:not(:last-child) > div > p:nth-child(2) {
   text-align: right;
-  margin-top: .04rem;
+  color: #333;
 }
 .orders-list > li:not(:last-child) > div > p:last-child {
   text-align: right;
@@ -228,7 +247,7 @@ input, select {
 .orders-list > li:last-child {
   height: .91rem;
   border-top: 1px solid #eee;
-  font-size: .12rem;
+  font-size: .14rem;
 }
 .orders-list > li:last-child > p {
   margin-top: .15rem;
@@ -249,14 +268,16 @@ input, select {
   line-height: .34rem;
 }
 .orders-list > li:last-child > div:last-child {
-  margin-right: .1rem;
-}
-.orders-list > li:last-child > div:last-child > a {
-  color: #737373;
-}
-.orders-list > li:last-child > div:nth-child(2) {
   border: 1px solid #DCB469;
 }
-.orders-list > li:last-child > div:nth-child(2) > a {
+.orders-list > li:last-child > div:last-child > a {
   color: #DCB469;
+}
+.orders-list > li:last-child > div:nth-child(2) {
+  border: 1px solid #737373;
+  margin-left:.1rem;
+  color: #737373;
+}
+.orders-list > li:last-child > div:nth-child(2) > a {
+  color: #737373;
 }

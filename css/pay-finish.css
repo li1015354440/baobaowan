@@ -42,10 +42,10 @@ body {
   font-size: .16rem;
   width: 1rem;
   height: .33rem;
-  border: 1px solid #DFB55A;
-  border-radius: .04rem;
+  border: 1px solid #2b2b2b;
+  border-radius: .165rem;
   margin-top: .4rem;
-  color: #DFB55A;
+  color: #2b2b2b;
   line-height: .33rem;
 }
 .pay-finish-content > a:nth-child(4) {
