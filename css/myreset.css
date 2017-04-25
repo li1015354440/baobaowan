@@ -53,13 +53,13 @@ input, select {
 img {
 	display: block;
 }
-@font-face {
+/*@font-face {
 	font-family: "PingFang";
-	src: url('../font/冬青黑体W3.otf');
+	src: url('../font/SourceHanSansCN-Regular.otf');
 }
 html {
 	font-family: "PingFang";
-}
+}*/
 smallest {
 	font-size: .14rem;
 }
