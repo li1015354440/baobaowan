@@ -40,6 +40,14 @@ a {
     vertical-align:baseline;
     background:transparent;
     text-decoration: none;
+    -webkit-tap-highlight-color:transparent;
+}
+a:hover,a:active,a:visited,a:link,a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
 }
 table {
     border-collapse:collapse;

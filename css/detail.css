@@ -218,7 +218,7 @@
 .alert-bg > .alert-content > li:nth-child(2) > span:last-child > span {
   display: block;
   float: left;
-  padding: 0 .2rem;
+  width: .4rem;
 }
 .alert-bg > .alert-content > li:last-child {
   height: .49rem;

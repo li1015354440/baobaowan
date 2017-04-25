@@ -56,28 +56,27 @@
 .nav > ul > li > a {
   display: block;
   padding-top: .4rem;
-  background-size: 100%;
   color: #333;
 }
 .nav > ul > li:first-child {
   background: url(../img/jiezhi.png) no-repeat center 0;
-  background-size: 25%;
+  background-size: 35%;
 }
 .nav > ul > li:nth-child(2) {
-  background: url(../img/shoulian.png) no-repeat center 0.05rem;
-  background-size: 33%;
+  background: url(../img/shoulian.png) no-repeat center 0;
+  background-size: 35%;
 }
 .nav > ul > li:nth-child(3) {
   background: url(../img/diaozui.png) no-repeat center 0;
-  background-size: 29%;
+  background-size: 33%;
 }
 .nav > ul > li:nth-child(4) {
   background: url(../img/ershi.png) no-repeat center 0;
-  background-size: 22%;
+  background-size: 26%;
 }
 .nav > ul > li:last-child {
-  background: url(../img/quanbu.png) no-repeat center 0.11rem;
-  background-size: 28%;
+  background: url(../img/quanbu.png) no-repeat center 0;
+  background-size: 30%;
 }
 h1 {
   color: #262626;
