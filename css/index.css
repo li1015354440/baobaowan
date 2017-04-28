@@ -6,13 +6,13 @@
 }
 .banner .banner-images {
   position: absolute;
-  width: 400%;
+  width: 500%;
   height: 2.1rem;
 }
 .banner .banner-images > img {
   display: block;
   float: left;
-  width: 25%;
+  width: 20%;
 }
 .banner .pagination-content {
   position: absolute;
