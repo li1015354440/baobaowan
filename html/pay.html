@@ -10,6 +10,10 @@
 			<title>baobaowan</title>
 			<link rel="stylesheet" type="text/css" href="../css/myreset.css" />
 			<link rel="stylesheet" type="text/css" href="../css/pay.css"/>
+			<!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/myreset.css" />
+			<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/pay.css"/>-->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/tools.js"></script>
 	</head>
 
 	<body>
@@ -25,6 +29,23 @@
 				</p>
 				<p>河南省安阳市龙安区文明小区12号楼2单元8号</p>
 			</a>
+			<!--<if condition="isset($recept_list)">
+				<volist name="recept_list" id="recept">
+				<a href="{$addAddress_url}" class="address-msg" id="nobody">
+					<p>
+						<span>{$recept['recept_name']}</span>
+						<span>{$recept['tel']}</span>
+					</p>
+					<p>{$recept['province']}{$recept['city']}{$recept['country']}{$recept['detail']}</p>
+
+				</a>
+				</volist>
+			<else/>
+			<a href="administered-address.html" class="address-msg" id="yesbody">
+				<span></span>
+				<span>添加收货人信息</span>
+			</a>
+			</if>-->
 		</div>
 		
 		<!--cut-->
@@ -48,6 +69,16 @@
 					<p>x2</p>
 				</div>
 			</li>
+			<!--<volist name="order_list" id="order">
+				<li>
+					<img src="__PUBLIC__/Thumb/{$order['thumb']}" alt="" />
+					<div>
+						<p>{$order['series_title']}{$order['name']}</p>
+						<p>¥{$order['shop_price']}.<small>00</small></p>
+						<p>x{$order['buy_quantity']}</p>
+					</div>
+				</li>
+			</volist>-->
 			<li></li>
 		</ul>
 		
@@ -75,13 +106,15 @@
 		<div class="footer">
 			<span>实际支付：</span>
 			<span>¥29999.<smallest>00</smallest></span>
+			<!--<span>¥{$total_price}.<smallest>00</smallest></span>-->
 			<a href="pay-finish.html">立即付款</a>
 		</div>
 
 		<!--js-->
-		<script src="../js/jquery.min.js"></script>
-		<script src="../js/tools.js"></script>
 		<script src="../js/pay.js"></script>
+		<!--<script src="__PUBLIC__/Home/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/Home/js/tools.js"></script>
+		<script src="__PUBLIC__/Home/js/pay.js"></script>-->
 	</body>
 
 </html>

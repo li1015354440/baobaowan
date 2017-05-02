@@ -25,6 +25,9 @@ body {
     line-height:1;
     text-align: center;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 article,aside,canvas,details,figcaption,figure,
 footer,header,hgroup,menu,nav,section,summary { 
     display:block;
@@ -60,12 +63,13 @@ img {
 	display: block;
 }
 /*@font-face {
-	font-family: "PingFang";
-	src: url('../font/SourceHanSansCN-Regular.otf');
-}
-html {
-	font-family: "PingFang";
+	font-family: "dongqing";
+	src: url('../font/dongqing.otf');
 }*/
+html {
+	/*font-family: "微软雅黑";*/
+	/*font-family: "dongqing";*/
+}
 smallest {
 	font-size: .14rem;
 }
@@ -273,17 +277,13 @@ small {
   border: 1px solid #737373;
   line-height: .34rem;
 }
-.orders-list > li:last-child > div:last-child {
-  border: 1px solid #DCB469;
+.orders-list > li:last-child > div > a {
+	color: #737373;
 }
-.orders-list > li:last-child > div:last-child > a {
-  color: #DCB469;
+.orders-list > li:last-child .color-yellow {
+	border: 1px solid #DCB469;
+	margin-left: .1rem;
 }
-.orders-list > li:last-child > div:nth-child(2) {
-  border: 1px solid #737373;
-  margin-left:.1rem;
-  color: #737373;
-}
-.orders-list > li:last-child > div:nth-child(2) > a {
-  color: #737373;
+.orders-list > li:last-child .color-yellow > a {
+	color: #DCB469;
 }

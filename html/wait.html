@@ -11,11 +11,13 @@
 		<link rel="stylesheet" type="text/css" href="../css/myreset.css" />
 		<link rel="stylesheet" type="text/css" href="../css/wait-pay.css"/>
 		<link rel="stylesheet" type="text/css" href="../css/wait-send.css" />
+		<script src="../js/jquery.min.js"></script>
+		<script src="../js/tools.js"></script>
 	</head>
 
 	<body>
 		<div class="wait-content">
-			<ul class="header">	
+			<ul class="header">
 				<li><a class="active" id="wait-pay" href="javascript:;">待付款</a></li>
 				<li><a class="" id="wait-send" href="javascript:;">待发货</a></li>
 				<li><a class="" id="wait-delivery" href="javascript:;">待收货</a></li>
@@ -58,7 +60,7 @@
 									<span>总金额：</span>
 									<span>¥ 29700</span>
 								</p>
-								<div><a href="pay.html">立即支付</a></div>
+								<div class="color-yellow"><a href="pay.html">立即支付</a></div>
 								<div><a href="#">取消订单</a></div>
 							</li>
 						</ul>
@@ -216,7 +218,7 @@
 									<span>总金额：</span>
 									<span>¥ 29700</span>
 								</p>
-								<div><a href="#">确认收货</a></div>
+								<div class="color-yellow"><a href="#">确认收货</a></div>
 								<div><a href="#">查看订单</a></div>
 							</li>
 						</ul>
@@ -341,8 +343,7 @@
 		
 		
 		<!--js-->
-		<script src="../js/jquery.min.js"></script>
-		<script src="../js/tools.js"></script>
+		
 		<script src="../js/wait.js"></script>
 	</body>
 

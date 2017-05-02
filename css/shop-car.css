@@ -5,14 +5,14 @@ body {
   font-size: .14rem;
   text-align: left;
 }
-.shop-calr-list > li {
+.shop-calr-list li {
   margin-top: .05rem;
   height: 1rem;
   padding: 0 .12rem 0 .08rem;
   background: #fff;
   overflow: hidden;
 }
-.shop-calr-list > li > span {
+.shop-calr-list li > span {
   display: block;
   float: left;
   margin-top: .4rem;
@@ -22,31 +22,31 @@ body {
   background: url(../img/weixuanze2.png) no-repeat center;
   background-size: 100%;
 }
-.shop-calr-list > li .active {
+.shop-calr-list li .active {
   background: url(../img/yixuanze2.png) no-repeat center;
   background-size: 100%;
 }
-.shop-calr-list > li > img {
+.shop-calr-list li > img {
   margin-top: .13rem;
   float: left;
   width: .73rem;
   height: .73rem;
   border-radius: .04rem;
 }
-.shop-calr-list > li > div {
+.shop-calr-list li > div {
   margin-top: .13rem;
   width: 2.4rem;
   float: right;
   color: #666;
   line-height: .16rem;
 }
-.shop-calr-list > li > div > div:nth-child(2) {
+.shop-calr-list li > div > div:nth-child(2) {
   margin-top: .2rem;
   float: left;
   color: #333;
   font-size: .14rem;
 }
-.shop-calr-list > li > div > div:last-child {
+.shop-calr-list li > div > div:last-child {
   margin-top: .18rem;
   float: right;
   font-size: .14rem;
@@ -54,7 +54,7 @@ body {
   text-align: center;
   line-height: .2rem;
 }
-.shop-calr-list > li > div > div:last-child > a {
+.shop-calr-list li > div > div:last-child > a {
   box-sizing: border-box;
   display: block;
   float: left;
@@ -64,7 +64,7 @@ body {
   border: 1px solid #666;
   color: #333;
 }
-.shop-calr-list > li > div > div:last-child > span {
+.shop-calr-list li > div > div:last-child > span {
   display: block;
   float: left;
   width: .3rem;

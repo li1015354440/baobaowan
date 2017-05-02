@@ -82,22 +82,33 @@ $(function() {
 			
 //			结算
 			$("#accounts").on("click",function () {
+				var arr=[];
+				var arr2=[];
+				for(var i=0; i<$(".check").length; i++){
+					if($(".check").eq(i).hasClass("active")) {
+						arr.push($("#check-list").children("li").eq(i).attr("data-goods_id"));
+						arr2.push(parseInt($(".counts").eq(i).text()));
+					}
+				}
 				$.ajax({
 					url: "http://localhost/wanbaobao/index.php/Home/Buy/checkGoods",
 					type: "post",
 					dataType: "json",
-					data: {"goods_keys":[1,2]},
+					data: {"goods_keys":arr},
 					success: function (e) {
+						console.log(e)
 						if(e.error=="0"){
-							$.ajax({
-								url: "http://localhost/wanbaobao/index.php/Home/Buy/cartUpdate",
-								type: "post",
-								dataType: "json",
-								data: {"data":[{"key":1,"quantity":20}]},
-								success: function (e) {
-									window.location=e.url;
-								}
-							})
+							for(var i=0; i<arr.length; i++){
+								$.ajax({
+									url: "http://localhost/wanbaobao/index.php/Home/Buy/cartUpdate",
+									type: "post",
+									dataType: "json",
+									data: {"data":[{"key":arr[i],"quantity":arr2[i]}]},
+									success: function (e) {
+//										window.location=e.url;
+									}
+								})
+							}
 						}
 					}
 				})

@@ -10,36 +10,44 @@
 			<title>baobaowan</title>
 			<link rel="stylesheet" type="text/css" href="../css/myreset.css" />
 			<link rel="stylesheet" type="text/css" href="../css/add-address.css"/>
+			<!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/myreset.css" />
+			<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/add-address.css"/>-->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/tools.js"></script>
 	</head>
 
 	<body>
 		<!--收货地址-->
-		<ul class="delivery-address">
-			<li>
-				<span>收货人</span>
-				<input type="" placeholder="收货人" id="delivery-man" />
-			</li>
-			<li>
-				<span>手机号</span>
-				<input type="text" placeholder="收货人手机号码" id="delivery-phone" />
-			</li>
-			<li id="change-address">
-				<span>选择省市</span>
-				<input type="text" placeholder="请选择" id="city"/>
-			</li>
-			<li>
-				<textarea id="detail-address">请填写详细地址，例如街道等</textarea>
-			</li>
-		</ul>
+		<form action="" method="post">
+			<ul class="delivery-address">
+				<li>
+					<span>收货人</span>
+					<input type="text" name="" placeholder="收货人" id="delivery-man" />
+				</li>
+				<li>
+					<span>手机号</span>
+					<input type="text" name="" placeholder="收货人手机号码" id="delivery-phone" />
+				</li>
+				<li id="change-address">
+					<span>选择省市</span>
+					<input type="text" name="" placeholder="请选择" id="city"/>
+					<input type="hidden" name="" value="" id="id_content"/>  <!-- 存城市id -->
+				</li>
+				<li>
+					<textarea name="" id="detail-address">请填写详细地址，例如街道等</textarea>
+				</li>
+			</ul>
+			
+			<div class="save"><a href="javascript:;" id="save">保存</a></div>
+		</form>
 		
-		<div class="save"><a href="administered-address.html">保存</a></div>
 		
 		<!--弹框-->
 		<div class="alert-bg" id="alert-bg">
 			<div class="alert-address" id="alert-address">
 				<p>请选择省</p>
 				<ul id="cities">
-					<li class="li-active"><a href="javascript:;">北京市</a></li>
+					<li class="li-active">北京市</li>
 					<li>天津市</li>
 					<li>河北省</li>
 					<li>山西省</li>
@@ -58,11 +66,39 @@
 				</ul>
 			</div>
 		</div>
+		<!--<div class="alert-bg" id="alert-bg">
+			<div class="alert-address" id="alert-address">
+				<p>请选择省</p>
+				<ul id="cities">
+					<volist name="province_list" id="province">
+						<li class="
+						<if condition="$province['region_id'] eq 2">li-active</if>
+						" data-region_id ={$province['region_id']}>{$province['title']}</li>
+					</volist>
+				</ul>
+			</div>
+		</div>-->
+		
+		<!--弹框-->
+		<div class="alert-bg" id="alert-bg2">
+			<div class="alert-address" id="alert-country">
+				<p>请选择区/县</p>
+				<ul id="countrys">
+					<li class="li-active">朝阳区</li>
+					<li>通州区</li>
+					<li>怀柔区</li>
+					<li>大兴区</li>
+					<li>昌平区</li>
+					<li>房山区</li>
+				</ul>
+			</div>
+		</div>
 
 		<!--js-->
-		<script src="../js/jquery.min.js"></script>
-		<script src="../js/tools.js"></script>
 		<script src="../js/add-address.js"></script>
+		<!--<script src="__PUBLIC__/Home/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/Home/js/tools.js"></script>
+		<script src="__PUBLIC__/Home/js/add-address.js"></script>-->
 	</body>
 
 </html>

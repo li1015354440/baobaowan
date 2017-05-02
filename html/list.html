@@ -10,6 +10,10 @@
 			<title>baobaowan</title>
 			<link rel="stylesheet" type="text/css" href="../css/myreset.css" />
 			<link rel="stylesheet" type="text/css" href="../css/list.css" />
+			<!--<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/myreset.css" />
+			<link rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/list.css" />-->
+			<script src="../js/jquery.min.js"></script>
+			<script src="../js/tools.js"></script>
 	</head>
 
 	<body>
@@ -111,13 +115,24 @@
 					<p>小包包18K白金砖石吊坠...</p>
 					<p>¥8800.<small>00</small></p>
 				</li>
+				<!--<volist name="goods_list" id="goods">
+					<li>
+						<a href="{:U('detail',['goods_id'=>$goods['goods_id']])}">
+							<img src="__PUBLIC__/Thumb/{$goods['thumb']}" alt="{$goods['name']}" />
+						</a>
+						<p>{$goods['series_title']}</p>
+						<p>{$goods['name']}</p>
+						<p>¥{$goods['shop_price']}.<small>00</small></p>
+					</li>
+				</volist>-->
 			</ul>
 		</div>
 
 		<!--js-->
-		<script src="../js/jquery.min.js"></script>
-		<script src="../js/tools.js"></script>
 		<script src="../js/list.js"></script>
+		<!--<script src="__PUBLIC__/Home/js/jquery.min.js"></script>
+		<script src="__PUBLIC__/Home/js/tools.js"></script>
+		<script src="__PUBLIC__/Home/js/list.js"></script>-->
 	</body>
 
 </html>
